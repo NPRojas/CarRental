@@ -34,14 +34,14 @@ function calculateCarRental() {
 
     const totalDue = carRentalTotal + options + surcharge;
 
-    //Display the output 
+    //Get the outputs
     const carRentalOutput = document.querySelector('#carRental');
     const optionsOutput = document.querySelector('#options');
     const under25Output = document.querySelector('#under25Surcharge');
     const totalDueOutput = document.querySelector('#totalDue');
 
-    carRentalOutput.textContent += `${carRentalTotal.toFixed(2)}`;
-    optionsOutput.textContent += `${options.toFixed(2)}`;
-    under25Output.textContent += `${surcharge.toFixed(3)}`;
-    totalDueOutput.textContent += `${totalDue.toFixed(2)}`;
+    carRentalOutput.textContent = `Car Rental: $${carRentalTotal.toFixed(2)}`;
+    optionsOutput.textContent = `Options: $${options.toFixed(2)}`;
+    under25Output.textContent = `Under 25 Surcharge: $${surcharge.toFixed(2)}`;
+    totalDueOutput.textContent = `Total Due: $${totalDue.toFixed(2)}`;
 }   
